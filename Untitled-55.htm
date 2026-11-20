@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت بازی من</title>
+
+    <style>
+        body {
+            background-image: url("radin44.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            direction: rtl;
+            text-align: center;
+            font-family: Tahoma;
+            margin: 0;
+        }
+
+        h1 {
+            color: #ffffff;
+            background-color: #6da5c0;
+            padding: 25px;
+            margin: 0;
+        }
+
+        h2 {
+            color: #0d0d0e;
+        }
+
+        h3 {
+            color: #eff4f5;
+        }
+
+        p {
+            color: #263b50;
+        }
+
+        hr {
+            border: 1px solid #6da5c0;
+        }
+
+        /* کادر جستجو */
+        .search-box {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px auto;
+            padding: 10px;
+        }
+
+        .search-box input {
+            width: 350px;
+            padding: 12px;
+            border: 2px solid #087f8c;
+            border-radius: 10px;
+            font-family: Tahoma;
+        }
+
+        .search-box input:focus {
+            box-shadow: 0 0 10px #087f8c;
+            outline: none;
+        }
+
+        .search-box button {
+            background-color: #087f8c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: Tahoma;
+        }
+
+        .search-box button:hover {
+            background-color: #294d61;
+        }
+
+        /* کارت بازی */
+        .game {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            background-color: #6da5c0;
+            border: 3px solid #072e33;
+            margin: 20px auto;
+            padding: 25px;
+            width: 80%;
+            max-width: 750px;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+
+        .game img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .description {
+            color: #263b50;
+            text-align: right;
+            flex: 1;
+        }
+
+        .game a {
+            color: #881144;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .game a:hover {
+            color: white;
+        }
+
+        footer {
+            background-color: #294d61;
+            color: #f1e6e6;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            color: white;
+        }
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 22px;
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .game {
+        width: 92%;
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .game img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .search-box {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .search-box input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .search-box button {
+        padding: 10px;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <h3>*به سایت من خوش آمدید*</h3>
+
+    <h3>*به دنیای بازی های جذاب خوش آمدید*</h3>
+
+    <p><h3>در این سایت می توانید به بازی های جذاب سر بزنید</h3></p>
+
+    <hr>
+
+    <h1>به بازی های من خوش آمدید</h1>
+
+    <!-- قسمت جستجو -->
+    <div class="search-box">
+        <input type="text" id="search"
+        placeholder="نام بازی مورد نظر را بنویسید...">
+
+        <button type="button" onclick="searchGame()">
+            جستجو
+        </button>
+    </div>
+
+    <!-- بازی فوتبال -->
+    <div class="game">
+        <img src="download (2).jpg" alt="بازی فوتبال">
+
+        <div class="description">
+            <h2>بازی فوتبال</h2>
+
+            <p><b><i><u>یک بازی سرگرم کننده</u></i></b></p>
+
+            <a href="https://vgdl.ir/football-league-android/">
+                برای دانلود روی لینک بزنید
+            </a>
+        </div>
+    </div>
+
+    <!-- بازی ماینکرفت -->
+    <div class="game">
+        <img src="download.jpg" alt="بازی ماینکرفت">
+
+        <div class="description">
+            <h2>بازی ماینکرفت</h2>
+
+            <p><b><i><u>یک بازی سرگرم کننده</u></i></b></p>
+
+            <a href="https://www.minecraft.net/">
+                برای دانلود روی لینک بزنید
+            </a>
+        </div>
+    </div>
+
+    <!-- بازی ماشینی -->
+    <div class="game">
+        <img src="download (1).jpg" alt="بازی ماشینی">
+
+        <div class="description">
+            <h2>بازی ماشینی</h2>
+
+            <p><b><i><u>یک بازی سرگرم کننده</u></i></b></p>
+
+            <a href="https://www.ea.com/games/need-for-speed">
+                برای دانلود روی لینک بزنید
+            </a>
+        </div>
+    </div>
+
+    <!-- بازی وارزون -->
+    <div class="game">
+        <img src="images.jpg" alt="بازی وارزون">
+
+        <div class="description">
+            <h2>وارزون</h2>
+
+            <p><b><i>یک بازی سرگرم کننده</i></b></p>
+
+            <a href="https://www.callofduty.com/warzone">
+                برای مشاهده بازی روی لینک بزنید
+            </a>
+        </div>
+    </div>
+
+    <!-- بازی کامیونی -->
+    <div class="game">
+        <img src="American-Truck-Simulator.jpg" alt="بازی کامیونی">
+
+        <div class="description">
+            <h2>بازی کامیونی</h2>
+
+            <p><b><i>یک بازی سرگرم کننده</i></b></p>
+
+            <a href="https://www.yasdl.com/">
+                برای دانلود روی لینک بزنید
+            </a>
+        </div>
+    </div>
+
+    <!-- پیام پیدا نشدن بازی -->
+    <p id="no-result" style="display:none;">
+       <h3> بازی مورد نظر پیدا نشد!</h3>
+    </p>
+
+    <!-- کد جستجوی بازی ها -->
+    <script>
+        function searchGame() {
+            let input = document.getElementById("search").value;
+            let games = document.querySelectorAll(".game");
+            let found = false;
+
+            games.forEach(function(game) {
+                if (game.innerText.includes(input)) {
+                    game.style.display = "flex";
+                    found = true;
+                } else {
+                    game.style.display = "none";
+                }
+            });
+
+            document.getElementById("no-result").style.display =
+                found ? "none" : "block";
+        }
+    </script>
+
+    <footer>
+        <p><i>طراحی سایت توسط رادین</i></p>
+    </footer>
+
+</body>
+</html>
