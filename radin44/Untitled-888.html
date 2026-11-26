@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت بازی من</title>
+
+    <style>
+
+        /* تنظیمات کلی صفحه */
+        body {
+            background-image: url("radin44.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            direction: rtl;
+            text-align: center;
+            font-family: Tahoma;
+            margin: 0;
+        }
+
+        /* عنوان اصلی */
+        h1 {
+            color: white;
+            background-color: rgba(0, 40, 100, 0.85);
+            padding: 25px;
+            margin: 0;
+        }
+
+        /* عنوان دوم */
+        h2 {
+            color: white;
+        }
+
+        /* عنوان سوم */
+        h3 {
+            color: #00bfff;
+        }
+
+        /* رنگ پاراگراف ها */
+        p {
+            color: white;
+        }
+
+        /* خط جداکننده */
+        hr {
+            border: 1px solid #00bfff;
+        }
+
+        /* کادر جستجو */
+        .search-box {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px auto;
+            padding: 10px;
+        }
+
+        /* کادر وارد کردن نام بازی */
+        .search-box input {
+            width: 350px;
+            padding: 12px;
+            border: 2px solid #087f8c;
+            border-radius: 10px;
+            font-family: Tahoma;
+        }
+
+        /* افکت کادر جستجو */
+        .search-box input:focus {
+            box-shadow: 0 0 10px #087f8c;
+            outline: none;
+        }
+
+        /* دکمه جستجو */
+        .search-box button {
+            background-color: #087f8c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: Tahoma;
+        }
+
+        /* افکت دکمه */
+        .search-box button:hover {
+            background-color: #294d61;
+        }
+
+        /* کارت بازی */
+        .game {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            background-color: rgba(50, 100, 160, 0.90);
+            border: 3px solid #00bfff;
+            margin: 20px auto;
+            padding: 25px;
+            width: 80%;
+            max-width: 750px;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+
+        /* عکس بازی */
+        .game img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        /* توضیحات بازی */
+        .description {
+            color: white;
+            text-align: right;
+            flex: 1;
+        }
+
+        /* لینک بازی */
+        .game a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* افکت لینک */
+        .game a:hover {
+            color: #00ffff;
+        }
+
+        /* بخش نظرات */
+        .comments {
+            background-color: rgba(10, 40, 90, 0.90);
+            border: 3px solid #00bfff;
+            border-radius: 20px;
+            width: 80%;
+            max-width: 750px;
+            margin: 30px auto;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+        /* کادر نوشتن نظر */
+        .comments textarea {
+            width: 90%;
+            height: 120px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 2px solid #00bfff;
+            font-family: Tahoma;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+
+        /* دکمه ارسال نظر */
+        .comments button {
+            background-color: #087f8c;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-family: Tahoma;
+        }
+
+        /* افکت دکمه ارسال */
+        .comments button:hover {
+            background-color: #00bfff;
+        }
+
+        /* ظاهر نظرهای ارسال شده */
+        .comment-item {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 10px;
+            text-align: right;
+            overflow-wrap: anywhere;
+        }
+
+        /* بخش پایانی سایت */
+        footer {
+            background-color: rgba(10, 30, 70, 0.90);
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* رنگ متن پایین سایت */
+        footer p {
+            color: white;
+        }
+
+        /* تنظیم سایت برای گوشی */
+        @media (max-width: 600px) {
+
+            .game {
+                width: 92%;
+                flex-direction: column;
+            }
+
+            .search-box input {
+                width: 65%;
+            }
+
+            .comments {
+                width: 92%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- عنوان خوش آمدگویی -->
+    <h2>به سایت من خوش آمدید</h2>
+
+    <!-- معرفی سایت -->
+    <h3>به دنیای بازی های جذاب خوش آمدید</h3>
+
+    <p>در این سایت می توانید به بازی های جذاب سر بزنید.</p>
+
+    <hr>
+
+    <!-- عنوان اصلی -->
+    <h1>به بازی های من خوش آمدید</h1>
+
+    <!-- قسمت جستجو -->
+    <div class="search-box">
+
+        <input type="text" id="search"
+        placeholder="نام بازی مورد نظر را بنویسید...">
+
+        <button type="button" onclick="searchGame()">
+            جستجو
+        </button>
+
+    </div>
+
+    <!-- بازی فوتبال -->
+    <div class="game">
+        <img src="download (2).jpg" alt="بازی فوتبال">
+
+        <div class="description">
+            <h2>بازی فوتبال</h2>
+            <p><b><i><u>یک بازی سرگرم کننده</u></i></b></p>
+
+            <a href="https://vgdl.ir/football-league-android/">
+                برای دانلود روی لینک بزنید
+            </a>
+        </div>
+    </div>
+
+    <!-- بازی ماینکرفت -->
+    <div class="game">
+        <img src="download.jpg" alt="بازی ماینکرفت">
+
+        <div class="description">
+            <h2>بازی ماینکرفت</h2>
+            <p><b><i><u>یک بازی سرگرم کننده</u></i></b></p>
+
+            <a href="https://www.minecraft.net/">
+                برای دانلود روی لینک بزنید
+            </a>
+        </div>
+    </div>
+
+    <!-- بازی ماشینی -->
+    <div class="game">
+        <img src="download (1).jpg" alt="بازی ماشینی">
+
+        <div class="description">
+            <h2>بازی ماشینی</h2>
+            <p><b><i><u>یک بازی سرگرم کننده</u></i></b></p>
+
+            <a href="https://www.ea.com/games/need-for-speed">
+                برای دانلود روی لینک بزنید
+            </a>
+        </div>
+    </div>
+
+    <!-- بازی وارزون -->
+    <div class="game">
+        <img src="images.jpg" alt="بازی وارزون">
+
+        <div class="description">
+            <h2>وارزون</h2>
+            <p><b><i>یک بازی سرگرم کننده</i></b></p>
+
+            <a href="https://www.callofduty.com/warzone">
+                برای مشاهده بازی روی لینک بزنید
+            </a>
+        </div>
+    </div>
+
+    <!-- بازی کامیونی -->
+    <div class="game">
+        <img src="American-Truck-Simulator.jpg" alt="بازی کامیونی">
+
+        <div class="description">
+            <h2>بازی کامیونی</h2>
+            <p><b><i>یک بازی سرگرم کننده</i></b></p>
+
+            <a href="https://www.yasdl.com/">
+                برای دانلود روی لینک بزنید
+            </a>
+        </div>
+    </div>
+
+    <!-- پیام در صورت پیدا نشدن بازی -->
+    <p id="no-result" style="display:none;">
+        بازی مورد نظر پیدا نشد!
+    </p>
+
+    <!-- بخش نظرات و پیشنهادات -->
+    <div class="comments">
+
+        <h2>نظرات و پیشنهادات</h2>
+
+        <p>نظر شما درباره سایت ما چیست؟</p>
+
+        <!-- کادر نوشتن نظر -->
+        <textarea id="comment" placeholder="نظر یا پیشنهاد خود را بنویسید..."></textarea>
+
+        <!-- دکمه ارسال -->
+        <button onclick="sendComment()">ارسال نظر</button>
+
+        <!-- نمایش نظرات -->
+        <div id="comments-list"></div>
+
+    </div>
+
+    <!-- کد جاوااسکریپت -->
+    <script>
+
+        // تابع جستجوی بازی
+        function searchGame() {
+
+            // دریافت متن کادر جستجو
+            let input = document.getElementById("search").value.trim();
+
+            // پیدا کردن کارت های بازی
+            let games = document.querySelectorAll(".game");
+
+            // بررسی پیدا شدن بازی
+            let found = false;
+
+            // بررسی کارت ها
+            games.forEach(function(game) {
+
+                if (input === "") {
+                    game.style.display = "flex";
+                    found = true;
+                }
+
+                else if (game.innerText.includes(input)) {
+                    game.style.display = "flex";
+                    found = true;
+                }
+
+                else {
+                    game.style.display = "none";
+                }
+
+            });
+
+            // نمایش پیام در صورت پیدا نشدن
+            document.getElementById("no-result").style.display =
+                found ? "none" : "block";
+        }
+
+        // تابع ارسال نظر
+        function sendComment() {
+
+            // دریافت متن نظر
+            let text = document.getElementById("comment").value.trim();
+
+            // بررسی خالی نبودن نظر
+            if (text === "") {
+                alert("لطفاً نظر خود را بنویسید!");
+                return;
+            }
+
+            // ساخت کادر جدید برای نظر
+            let newComment = document.createElement("div");
+
+            // اضافه کردن کلاس به کادر
+            newComment.className = "comment-item";
+
+            // قرار دادن متن نظر
+            newComment.textContent = text;
+
+            // اضافه کردن نظر به لیست
+            document.getElementById("comments-list").appendChild(newComment);
+
+            // خالی کردن کادر نوشتن
+            document.getElementById("comment").value = "";
+        }
+
+    </script>
+
+    <!-- پایین سایت -->
+    <footer>
+
+        <p><i>امیدوارم از بازی راضی بوده باشین، ممنون که ما را انتخاب کردین</i></p>
+
+        <p><i>طراحی سایت توسط رادین</i></p>
+
+    </footer>
+
+</body>
+</html>
